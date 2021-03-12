@@ -20,9 +20,9 @@ To create this project locally, create the following file structure:
 
 .. code-block:: text
 
-    packaging_tutorial
-    └── src
-        └── example_pkg
+    packaging_tutorial/
+    └── src/
+        └── example_pkg/
             └── __init__.py
 
 Once you create this structure, you'll want to run all of the commands in this
@@ -44,16 +44,16 @@ project's root directory - you will add content to them in the following steps.
 
 .. code-block:: text
 
-    packaging_tutorial
+    packaging_tutorial/
     ├── LICENSE
     ├── pyproject.toml
     ├── README.md
     ├── setup.cfg
     ├── setup.py  # optional, needed to make editable pip installs work
-    ├── src
-    │   └── example_pkg
+    ├── src/
+    │   └── example_pkg/
     │       └── __init__.py
-    └── tests
+    └── tests/
 
 
 Creating a test folder
@@ -188,7 +188,7 @@ an escape hatch when absolutely necessary.
 
     In the options category, we have controls for setuptools itself:
 
-    - ``package_dir`` is a collection of package names and directories.
+    - ``package_dir`` is a mapping of package names and directories.
       An empty package name represents the "root package", so in this
       case the root package is in the ``src`` directory.
     - ``packages`` is a list of all Python :term:`import packages <Import
